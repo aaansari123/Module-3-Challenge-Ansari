@@ -20,6 +20,7 @@ function writePassword() {
   randList = "";
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
+  
   var length = prompt("Enter a password length between 8 - 128 characters in length");
   if ((length <= 8 ) || (length >= 128)){
     alert("This is an invalid length. Try again");
